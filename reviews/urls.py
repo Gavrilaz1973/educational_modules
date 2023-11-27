@@ -6,6 +6,6 @@ from reviews.views import ReviewViewSet
 app_name = ReviewsConfig.name
 
 router = DefaultRouter()
-router.register(r'', ReviewViewSet, basename='courses')
+router.register(r'', ReviewViewSet, basename='reviews')
 
 urlpatterns = router.urls
