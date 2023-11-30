@@ -6,7 +6,6 @@ from modules.models import Module
 NULLABLE = {'blank': True, 'null': True}
 
 
-
 class Review(models.Model):
     METHOD_CHOICES = [('1', '1'), ('2', '2'), ('3', '3'),('4', '4'),('5', '5'),]
     rating = models.CharField(choices=METHOD_CHOICES, default=METHOD_CHOICES[0], verbose_name='рейтинг', **NULLABLE)

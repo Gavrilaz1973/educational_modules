@@ -84,6 +84,7 @@ class ReviewTestCase(APITestCase):
                             'module': 9,
                             'user': 10}
                          )
+
     def test_valid_review(self):
         data = {
             "rating": 5,
