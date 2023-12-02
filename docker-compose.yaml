@@ -10,10 +10,6 @@ services:
   db:
     image: postgres
     environment:
-      - POSTGRES_HOST_AUTH_METHOD=md5
-      - POSTGRES_DB=edu_modules
-      - POSTGRES_USER=postgres
-      - POSTGRES_PASSWORD=postgres
       - PGDATA=/var/lib/postgresql/data/pgdata
     volumes:
       - pg_data:/var/lib/postgresql/data/pgdata
